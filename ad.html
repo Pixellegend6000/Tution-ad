@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Advertisement</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f7ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('https://www.transparenttextures.com/patterns/white-paper.png'); /* Optional background texture */
+        }
+        .ad-container {
+            background-color: #ffffff;
+            padding: 30px;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 2px solid #007bff; /* Border for a standout effect */
+        }
+        .ad-header {
+            font-size: 2em;
+            color: #007bff;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+        }
+        .ad-subtitle {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .ad-content {
+            text-align: left;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .ad-content p {
+            margin: 15px 0;
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+        .ad-content p:hover {
+            transform: translateY(-2px); /* Lift effect on hover */
+            color: #007bff; /* Change color on hover */
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Button effects */
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* Slightly increase size on hover */
+        }
+        #contact-details {
+            margin-top: 20px;
+            display: none;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.1em;
+        }
+        .location {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <!-- Header and Subtitle -->
+        <div class="ad-header">🌟 Boost Your Grades with Expert Tutoring! 🌟</div>
+        <div class="ad-subtitle">Licensed Tutor | Online & Face-to-Face | Flexible Fees</div>
+        
+        <!-- Content Section -->
+        <div class="ad-content">
+            <p><strong>Subjects:</strong> English, Math, Science, Social Studies, and more!</p>
+            <p><strong>Grades:</strong> 1-7</p>
+            <p>I am a licensed tuition teacher with experience as a class teacher in UAE schools.</p>
+            <p>I have experience teaching in both British and CBSE curriculums.</p>
+            <p>Personalized lessons tailored just for you, with flexible timing to suit your needs.</p>
+            <p>Preparation for exams, interactive learning, and support in multiple subjects!</p>
+            <p class="location">📍 Location: Near New Muweileh Park</p> <!-- Added location -->
+        </div>
+
+        <!-- Contact Button -->
+        <button class="contact-button" onclick="showContactDetails()">Get Contact Details</button>
+
+        <!-- Hidden Contact Details -->
+        <div id="contact-details">
+            📞 Phone: +971588113695<br>
+            ✉️ Email: sreejapb85@gmail.com
+        </div>
+    </div>
+
+    <script>
+        function showContactDetails() {
+            document.getElementById("contact-details").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
